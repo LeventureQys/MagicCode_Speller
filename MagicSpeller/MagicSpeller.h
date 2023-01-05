@@ -79,10 +79,64 @@ private:
 			"                       代码无BUG!\n"
 		);
 	}
+	static QString ImgShenshou2() {
+		return QString(
+
+
+			"\n"
+			"┏┓　　　┏┓ + +\n"
+			"┏┛┻━━━┛┻┓ + +\n"
+			"┃　　　　　　　┃\n"
+			" ┃　　　━　　　┃++ + ++\n"
+			" ████━████ ┃ +\n"
+			"┃　　　　　　　┃ +\n"
+			"┃　　　┻　　　┃\n"
+			" ┃　　　　　　　┃ + +\n"
+			"┗━┓　　　┏━┛\n"
+			" ┃　　　┃　　\n"
+			" ┃　　　┃ + +++\n"
+			"┃　　　┃\n"
+			" ┃　　　┃ + 神兽保佑\n"
+			" ┃　　　┃    代码无bug　　\n"
+			" ┃　　　┃　　 +\n"
+			"┃　 　　┗━━━┓ + +\n"
+			"┃ 　　　　　　　┣┓\n"
+			" ┃ 　　　　　　　┏┛\n"
+			" ┗┓┓┏━┳┓┏┛ + +++\n"
+			"┃┫┫　┃┫┫\n"
+			" ┗┻┛　┗┻┛ + +++\n"
+			""
+			""
+		);
+	}
+	static QString ImgMeiNv() {
+		return QString(
+
+			""
+			"                       .::::.\n"
+			"                     .::::::::.\n"
+			"                    :::::::::::\n"
+			"                 ..:::::::::::'\n"
+			"              '::::::::::::'\n"
+			"                .::::::::::\n"
+			"           '::::::::::::::..\n"
+			"                ..::::::::::::.\n"
+			"              ``::::::::::::::::\n"
+			"               ::::``:::::::::'        .:::.\n"
+			"              ::::'   ':::::'       .::::::::.\n"
+			"            .::::'      ::::     .:::::::'::::.\n"
+			"           .:::'       :::::  .:::::::::' ':::::.\n"
+			"          .::'        :::::.:::::::::'      ':::::.\n"
+			"         .::'         ::::::::::::::'         ``::::.\n"
+			"     ...:::           ::::::::::::'              ``::.\n"
+			"    ```` ':.          ':::::::::'                  ::::..\n"
+			"                       '.:::::'                    ':'````..\n"
+		);
+	}
 #pragma endregion
 public:
 	enum class Wish_Type {
-		Buda = 1, Kunkun = 2,Shenshou1 = 3
+		Buda = 1, Kunkun = 2,Shenshou1 = 3,Shenshou2 = 4,MeiNv=5
 	};
 	static void MakeWish(Wish_Type type) {
 		switch (type) {
@@ -95,6 +149,11 @@ public:
 		case Wish_Type::Shenshou1:
 			qDebug().noquote() << ImgShenshou1();
 			break;
+		case Wish_Type::Shenshou2:
+			qDebug().noquote() << ImgShenshou2();
+			break;
+		case Wish_Type::MeiNv:
+			qDebug().noquote() << ImgMeiNv();
 		default:
 			break;
 		}
